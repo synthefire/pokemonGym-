@@ -1,0 +1,14 @@
+html{
+  background-image: url("https://pm1.narvii.com/6486/239b5357d11a3c649b2ca43758af4b35b1df333d_hq.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+h1{
+  text-align: center;
+  background-size: contain;
+  padding: -50px;
+  border-style: ridge;
+  border-radius: 20px;
+  border-width: 30px;
+}

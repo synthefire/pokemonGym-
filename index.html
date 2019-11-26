@@ -4,15 +4,103 @@
     <link rel="stylesheet" href="main.css">
     <meta charset="utf-8">
     <title>FJIC GYM</title>
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap" rel="stylesheet">
   </head>
 
-  <body>
+   <body>
+  <h1 id="h1">Train!</h1>
 
-    <div class="img">
-      <img src="https://files.gamebanana.com/img/ss/maps/5b6a3653155d5.jpg" alt="">
+<div class="stats">
+    <div id="fredlyne">
+        <p id ="fname"></p>
+        <p id ="fhp"></p>
+        <p id ="jatk"></p>
+        <p id ="fdef"></p>
+        <p id ="fability"></p>
+    </div>
+  </div>
+
+
+<div class="stats">
+    <div id="crystal">
+        <p id ="cname"></p>
+        <p id ="chp"></p>
+        <p id ="catk"></p>
+        <p id ="cdef"></p>
+        <p id ="cability"></p>
+    </div>
+  </div>
+
+
+<div class="stats ">
+    <div id="julian">
+        <p id ="jname"></p>
+        <p id ="jhp"></p>
+        <p id ="jatk"></p>
+        <p id ="jdef"></p>
+        <p id ="jability"></p>
+    </div>
+</div>
+
+
+
+
+
+<!-- Trigger/Open The Modal -->
+<button id="btn1">Open Modal</button>
+
+<!-- The Modal -->
+<div id="modal1" class="statModal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <div class="stats">
+      <p>issac</p>
+        <div id="isaac">
+            <p id ="iname"></p>
+            <p id ="ihp"></p>
+            <p id ="iatk"></p>
+            <p id ="idef"></p>
+            <p id ="iability"></p>
+        </div>
+      </div>
 
     </div>
-    <h1>Train!</h1>
+
+</div>
+
+<script>
+var modal = document.getElementById("modal1");
+
+var btn = document.getElementById("btn1");
+
+var span = document.getElementsByClassName("close")[0];
+
+
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+
+
+
+
+
+
     <script src="main.js" charset="utf-8"></script>
   </body>
 </html>

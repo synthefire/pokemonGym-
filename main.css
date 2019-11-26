@@ -1,14 +1,64 @@
 html{
-  background-image: url("https://pm1.narvii.com/6486/239b5357d11a3c649b2ca43758af4b35b1df333d_hq.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
+  font-family: 'Press Start 2P', cursive;
+
+  }
+
+
+  body{
+background-image: url("https://www.tynker.com/projects/images/5a4c48771c36d1b9278b458e/background-scene---soccer-field.png");
+height: 100px;
+width: 100px;
+background-size: cover;
 }
 
-h1{
+#h1{
   text-align: center;
-  background-size: contain;
-  padding: -50px;
-  border-style: ridge;
-  border-radius: 20px;
-  border-width: 30px;
+
+}
+
+.img{
+
+}
+
+
+
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  font-family: 'Press Start 2P', cursive;
+  background-color: black;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  color: white;
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
 }

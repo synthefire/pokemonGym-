@@ -8,98 +8,36 @@
   </head>
 
    <body>
-  <h1 id="h1">Train!</h1>
+     <div class="grid">
+  <h1 id="gym-name">FJIC Gym</h1>
 
-<div class="stats">
-    <div id="fredlyne">
-        <p id ="fname"></p>
-        <p id ="fhp"></p>
-        <p id ="jatk"></p>
-        <p id ="fdef"></p>
-        <p id ="fability"></p>
-    </div>
-  </div>
-
-
-<div class="stats">
-    <div id="crystal">
-        <p id ="cname"></p>
-        <p id ="chp"></p>
-        <p id ="catk"></p>
-        <p id ="cdef"></p>
-        <p id ="cability"></p>
-    </div>
-  </div>
-
-
-<div class="stats ">
-    <div id="julian">
-        <p id ="jname"></p>
-        <p id ="jhp"></p>
-        <p id ="jatk"></p>
-        <p id ="jdef"></p>
-        <p id ="jability"></p>
-    </div>
+  <div class="trainer" id="trainer1">
+  <img src="http://images4.fanpop.com/image/photos/23300000/Pokemon-Trainers-pokemon-23314354-300-631.jpg" class="trainer-sprite">
+    <button class="show-stats" onclick="queryCrystalPokemon();">Show Pokemon</button>
+    <ul id="team1" class="pokeTeam"></ul>
 </div>
 
-
-
-
-
-<!-- Trigger/Open The Modal -->
-<button id="btn1">Open Modal</button>
-
-<!-- The Modal -->
-<div id="modal1" class="statModal">
-
-  <!-- Modal content -->
-  <div class="modal-content">
-    <span class="close">&times;</span>
-    <div class="stats">
-      <p>issac</p>
-        <div id="isaac">
-            <p id ="iname"></p>
-            <p id ="ihp"></p>
-            <p id ="iatk"></p>
-            <p id ="idef"></p>
-            <p id ="iability"></p>
-        </div>
-      </div>
-
-    </div>
-
+  <div class="trainer" id="trainer2">
+  <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/fcb3aa21-a3c8-42a9-baf7-5ad1dc9dba85/d4oufoy-ef713063-855f-4267-91cb-b2c81d333f63.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2ZjYjNhYTIxLWEzYzgtNDJhOS1iYWY3LTVhZDFkYzlkYmE4NVwvZDRvdWZveS1lZjcxMzA2My04NTVmLTQyNjctOTFjYi1iMmM4MWQzMzNmNjMucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.BQXFT4GStF57rwGlXEFQTWekvE0DF7w2PxAJqZMB22o" class="trainer-sprite">
+    <button class="show-stats" onclick="queryJulianPokemon();">Show Pokemon</button>
+    <ul id="team2" class="pokeTeam"></ul>
+    <!-- <li>name: </li>
+    <li>name: </li>
+    <li>name: </li> -->
 </div>
 
-<script>
-var modal = document.getElementById("modal1");
+  <div class="trainer" id="trainer3">
+  <img src="https://cdn.bulbagarden.net/upload/e/e1/XY_Serena.png" class="trainer-sprite">
+    <button class="show-stats" onclick="queryIsaacPokemon();">Show Pokemon</button>
+    <ul id="team3" class="pokeTeam"></ul>
+</div>
 
-var btn = document.getElementById("btn1");
-
-var span = document.getElementsByClassName("close")[0];
-
-
-btn.onclick = function() {
-  modal.style.display = "block";
-}
-
-
-span.onclick = function() {
-  modal.style.display = "none";
-}
-
-
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
-</script>
-
-
-
-
-
-
+  <div class="trainer" id="trainer4">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZbKbeDLIiFzPsH1ox04DQJUddfPtQ7bL253Nl9gL3GdNESN8N&s" class="trainer-sprite">
+    <button class="show-stats" onclick="queryFredlynePokemon();">Show Pokemon</button>
+    <ul id="team4" class="pokeTeam"></ul>
+</div>
+</div>
 
     <script src="main.js" charset="utf-8"></script>
   </body>

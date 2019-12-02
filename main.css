@@ -1,64 +1,67 @@
 html{
   font-family: 'Press Start 2P', cursive;
-
   }
 
-
-  body{
+body{
 background-image: url("https://www.tynker.com/projects/images/5a4c48771c36d1b9278b458e/background-scene---soccer-field.png");
-height: 100px;
-width: 100px;
 background-size: cover;
 }
 
-#h1{
+.grid {
+  display: grid;
+  grid-template: auto auto auto / auto auto;
+  grid-template-areas:
+    "gym-name gym-name"
+    "trainer1 trainer2"
+    "trainer3 trainer4";
+    justify-items: center;
+    grid-row-gap: 50px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.show-stats {
+  margin-top: 50%;
+}
+
+#gym-name{
   text-align: center;
-
+grid-area: gym-name;
 }
 
-.img{
-
+.trainer {
+  display: grid;
+  grid-template: auto auto auto / auto auto auto;
+  grid-gap: 10px;
 }
 
-
-
-
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+.trainer img {
+  width: 100px;
 }
 
-/* Modal Content */
-.modal-content {
-  font-family: 'Press Start 2P', cursive;
+#trainer1 {
+  grid-area: trainer1;
+  grid-template-areas:
+  "trainerSprite btn pokeName"
+  "trainerSprite btn pokeSprite"
+  "crystal-poke crystal-poke crystal-poke";
+
+}
+#trainer2 {
+  grid-area: trainer2;
+}
+#trainer3 {
+  grid-area: trainer3;
+}
+#trainer4 {
+  grid-area: trainer4;
+}
+
+.pokeTeam {
   background-color: black;
-  margin: auto;
   padding: 20px;
-  border: 1px solid #888;
-  width: 80%;
   color: white;
-}
-
-/* The Close Button */
-.close {
-  color: white;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-  color: #000;
-  text-decoration: none;
-  cursor: pointer;
+  line-height: 1.5em;
+  width: 100%;
+  list-style-type: none;
 }
